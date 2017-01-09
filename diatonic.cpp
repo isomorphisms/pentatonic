@@ -7,7 +7,11 @@ class TonalKey {
 // forget about F# etc if it's too hard
 };
 
-class Tuning {};
+class Tuning {
+  enum tuning {equalTemperament, pythagorean, justIntonation, aaronMeanTone, silbermann, kirnberger, vallotti, werckmeister}
+  // http://leware.net/temper/temper.htm
+  tuning = equalTemperament;
+};
 
 
 class BaseFrequency {
